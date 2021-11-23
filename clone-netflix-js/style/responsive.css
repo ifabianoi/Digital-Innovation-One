@@ -1,0 +1,34 @@
+@media screen and (max-width: 768px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+
+    .main-movie {
+        font-size: 16px;
+        background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), 
+            url('../img/banner-mobile.jpg');
+        background-position: top;
+        background-repeat: no-repeat;   
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .main-movie .description{
+        width: 50%;
+    }
+}
