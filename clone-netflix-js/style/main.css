@@ -22,13 +22,12 @@ header .container{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 70px;
 }
 
 header .logo{
     margin-left: 5px;
-    color: var(--red);
-    font-family: 'Arial Black', Times;
-    font-size: 40px;
+    width: 150px;
 }
 
 header nav a{
