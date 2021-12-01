@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fafafa;  
+}
+
+.thanos {
+    position: absolute;
+    bottom: 0;
+    background-image: url(thanos.gif);
+    width: 100px;
+    height: 120px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+
+.captain {
+    position: absolute;
+    width: 90px;
+    height: 150px;
+    bottom: 0;
+    background-image: url(captainamerica_run.gif);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: bottom;
+}
+
+.game-over {
+    text-align: center;
+    color: #666;
+    margin: 50px 0;
+    font-family: arial;
+}
+
+.game-over-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+button {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	border-radius: 40px;
+	font-size: 1.5rem;
+	height: 60px;
+	width: 300px;
+	border: none;
+	background-color: #4e545c;
+	color: #e5e8e8;
+	transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+button:hover {
+	background-color: #000401;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0px;
+    background-image: url('background.png');
+    background-repeat: repeat-x;
+    animation: slideright 1200s infinite linear;
+    -webkit-animation: slideright 1200s infinite linear;
+    width: 100%;
+    height: 400px;
+}
